@@ -1,3 +1,15 @@
+## v5.3.0
+- Add the ability to upload release assets.
+- Add the ability to get an existing release by tag name. 
+
+BREAKING CHANGES: 
+- The `draft` and `prerelease` properties in the CreateRelease and Release 
+- classes have been renamed to `isDraft` and `isPrerelease` for clarity.
+- Release.targetCommitsh has been renamed to Release.targetCommitish. (spelling)
+- The `release` parameter in RepositoriesService.createRelease 
+has been renamed to `createRelease`.
+- `RepositoriesService.getRelease` has been renamed to `RepositoriesService.getReleaseById`
+
 ## v5.2.0
  - Add access to labels on Pull Requests https://github.com/DirectMyFile/github.dart/pull/163
  - Adding draft property to PR model https://github.com/DirectMyFile/github.dart/pull/162
